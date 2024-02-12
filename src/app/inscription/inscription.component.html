@@ -1,0 +1,33 @@
+<header>
+  <app-navbar></app-navbar>
+  <div class="content">
+      <div class="centered-content text-center">
+          <h1 class="title">Pour vous connecter veuillez suivre le lien</h1>
+          <button class="btn btn-primary start-button" (click)="scrollToSection('scrollInscription')">Inscrivez-vous</button>
+      </div>
+  </div>
+</header>
+<main role="main" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <article class="card">
+        <div class="card-header" id="scrollInscription">
+          Connexion à votre compte
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Courriel :</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="Entrez votre courriel" required>
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Mot de passe :</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Entrez votre mot de passe" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+          </form>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>

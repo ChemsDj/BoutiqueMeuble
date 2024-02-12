@@ -1,0 +1,61 @@
+header {
+  background-image: url('../../assets/background_Image.jpeg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+}
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; 
+  color: rgb(73, 36, 36);
+  text-align: center;
+}
+
+.navbar {
+  z-index: 2; 
+}
+
+.card {
+    margin-top: 20px;
+  }
+  
+  .card-header {
+    background-color: #4f1907;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; 
+    text-align: left;
+  }
+  
+  .btn-primary {
+    background-color: #4f1907;
+    border-color: #4f1907;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ba8181;
+    border-color: #8d3d3d;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  

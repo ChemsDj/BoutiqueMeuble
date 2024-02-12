@@ -1,0 +1,71 @@
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+
+header {
+  background: url('../../assets/background_Image.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.centered-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3; 
+  color: rgb(73, 36, 36);
+  text-align: center;
+}
+
+
+.card {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #4f1907;
+  color: #000;
+}
+
+
+.form-group, .btn-primary {
+  margin-bottom: 15px;
+}
+
+
+.btn-primary {
+  background-color: #4f1907;
+  border: none; 
+}
+
+.btn-primary:hover {
+  background-color: #ba8181;
+}
+
+
+#inscrire {
+  font-size: small;
+}

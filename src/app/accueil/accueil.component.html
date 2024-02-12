@@ -1,0 +1,45 @@
+<header class="ml-auto">
+    <app-navbar></app-navbar>
+    <div class="content">
+        <div class="centered-content text-center">
+            <h1 class="title">Pour vous connecter veuillez suivre le lien</h1>
+            <button class="btn btn-primary start-button" (click)="scrollToSection('scrollCatalogue')">Commencer la commande</button>
+        </div>
+    </div>
+</header>
+
+
+<!-- Section Meubles de Salon -->
+<section class="py-5" id="meubles-salon-section" id="scrollCatalogue">
+    <div class="container">
+        <h2 class="text-center">Les Meubles Que Nous Proposons</h2>
+        <p class="text-center">Transformez votre espace grâce à notre diversité de meubles</p>
+        <h3 class="text-center mb-4">Meubles de Salon</h3>
+
+        <div class="row equal-height">
+            <div class="col-md-3 meuble-item" *ngFor="let meuble of meublesSalon">
+                <img [src]="meuble.image" alt="{{meuble.nom}}" class="img-fluid">
+                <h4>{{ meuble.nom }}</h4>
+                <p>Prix: {{ meuble.prix }} $</p>
+                <button class="btn btn-outline-secondary">Ajouter article</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Meubles de Chambre -->
+<section class="py-5" id="meubles-chambre-section">
+    <div class="container">
+        <h3 class="text-center mb-4">Meubles de Chambre</h3>
+
+        <div class="row equal-height">
+            <div class="col-md-3 meuble-item" *ngFor="let meuble of meublesChambre">
+                <img [src]="meuble.image" alt="{{meuble.nom}}" class="img-fluid">
+                <h4>{{ meuble.nom }}</h4>
+                <p>Prix: {{ meuble.prix }} $</p>
+                <button class="btn btn-outline-secondary">Ajouter article</button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
